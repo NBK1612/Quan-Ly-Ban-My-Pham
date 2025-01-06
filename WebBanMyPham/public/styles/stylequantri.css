@@ -1,0 +1,403 @@
+/* Reset margin và padding cho tất cả các phần tử */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Kiểu cho body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Kiểu cho header */
+.header {
+    background: #a8d3ff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.header1 h1 {
+    margin: 0;
+}
+
+/* Kiểu cho menu */
+.menu1 {
+    list-style: none;
+    padding: 0px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.menu1 li {
+    position: relative;
+}
+
+.menu1 a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
+    transition: background 0.3s;
+}
+
+.menu1 a:hover {
+    background-color: #3198ff;
+}
+
+/* Dropdown menu */
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    min-width: 160px;
+    z-index: 1;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background 0.3s;
+}
+
+.dropdown-content a:hover {
+    background-color: #3198ff;
+}
+
+/* Kiểu cho phần chính */
+.main {
+    max-width: auto;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.admin-content {
+    padding: 20px;
+}
+/* Kiểu cho form admin */
+.admin-form {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.admin-form td {
+    padding: 10px;
+}
+
+.admin-form input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.admin-form input[type="submit"] {
+    background-color: #0055ff; /* Màu hồng */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.admin-form input[type="submit"]:hover {
+    background-color: #0084ff; /* Màu hồng nhạt hơn */
+}
+
+/* Kiểu cho bảng admin */
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.admin-table th, .admin-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.admin-table th {
+    background-color: #a8d3ff; /* Màu  */
+    color: rgb(0, 0, 0);
+}
+
+.admin-table tr:hover {
+    background-color: #f5f5f5;
+}
+
+
+.admin-header {
+    background-color: #a8d3ff; /* Màu */
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+
+/* Kiểu cho footer */
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #a8d3ff;
+    color: rgb(0, 0, 0);
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+/* Nút chung */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #a8d3ff; /* Màu hồng */
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: #00b3ff; /* Màu hồng nhạt hơn */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .menu1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu1 li {
+        margin: 5px 0;
+    }
+}
+
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"], input[type="number"], input[type="file"], input[type="date"], textarea {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 100%;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+
+
+        .error {
+            color: red;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        .back-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .back-link a {
+            color: #333;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .back-link a:hover {
+            text-decoration: underline;
+        }
+
+/* phần edit */
+
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="number"], input[type="file"], input[type="date"], textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group img {
+    max-width: 200px;
+    margin: 10px 0;
+}
+
+.error {
+    color: red;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.back-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.back-link a {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.back-link a:hover {
+    text-decoration: underline;
+}
+
+/* add */
+
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+input,
+input[type="text"],
+input[type="number"],
+input[type="date"],
+textarea,
+input[type="file"],
+select {
+    width: 100%;
+    padding: 12px;
+    margin: 5px 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+textarea:focus,
+select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+input[type="file"] {
+    padding: 3px; /* Giảm padding cho file input */
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #a8d3ff;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #28a6ff;
+}
+
+.error-message {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+}
+
+.details-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #a8d3ff;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 20px 0;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s, border 0.3s;
+}
+
+.details-button:hover {
+    background-color: rgb(87, 174, 255);
+    border: 1px solid #000000;
+}

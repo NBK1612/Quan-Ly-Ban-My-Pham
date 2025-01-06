@@ -1,0 +1,177 @@
+/* General Body Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7fc;
+    margin: 0;
+    padding: 0;
+}
+
+/* Heading Styling */
+h2 {
+    text-align: center;
+    color: #333;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+/* Container Styling */
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Styling */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+    font-size: 18px;
+}
+
+table th {
+    background-color: #6ab5ff;
+    color: rgb(0, 0, 0);
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Link Button Styling */
+.add-link, .edit-link, .delete-link {
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.add-link {
+    background-color: #7fbfff;
+    color: white;
+}
+
+.add-link:hover {
+    background-color: #3f9fff;
+}
+
+.edit-link {
+    background-color: #a8d3ff;
+    color: rgb(0, 0, 0);
+}
+
+.edit-link:hover {
+    background-color: #4aa4ff;
+}
+
+.delete-link {
+    background-color: #a8d3ff;
+    color: rgb(0, 0, 0);
+}
+
+.delete-link:hover {
+    background-color: #4aa4ff;
+}
+
+/* Form Styling */
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #555;
+    font-weight: 600;
+}
+
+input[type="text"], input[type="email"], button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="text"], input[type="email"] {
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+input[type="text"]:focus, input[type="email"]:focus {
+    border-color: #0080ff;
+    background-color: #fff;
+    outline: none;
+}
+
+button {
+    background-color: #5aacff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #3098ff;
+}
+
+/* Back Link Styling */
+.back-link {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 1500px) {
+    .container1 {
+        width: 90%;
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    table th, table td {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .container1 {
+        width: 90%;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    button {
+        font-size: 16px;
+    }
+
+    input[type="text"], input[type="email"] {
+        font-size: 14px;
+    }
+}

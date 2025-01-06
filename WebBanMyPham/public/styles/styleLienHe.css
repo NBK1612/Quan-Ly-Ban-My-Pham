@@ -1,0 +1,102 @@
+/* Reset cơ bản cho tất cả các phần tử */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cài đặt font và nền cho toàn bộ trang */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 20px;
+}
+
+
+.header h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.header p {
+    font-size: 18px;
+    font-style: italic;
+    margin-top: 5px;
+}
+
+/* Thông tin liên hệ - Contact Info */
+.contact-info {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-info h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.contact-info p {
+    font-size: 18px;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.contact-info p strong {
+    font-weight: bold;
+}
+
+/* Liên kết mạng xã hội */
+.contact-info .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    font-size: 20px;
+}
+
+.contact-info .social-links a {
+    color: #007bff;
+    transition: color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+}
+
+.contact-info .social-links a:hover {
+    color: #0056b3;
+    transform: scale(1.1);
+}
+
+/* Responsive: Điều chỉnh bố cục cho màn hình nhỏ */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 36px;
+    }
+
+    .contact-info {
+        padding: 20px;
+    }
+
+    .contact-info h2 {
+        font-size: 28px;
+    }
+
+    .contact-info p {
+        font-size: 16px;
+    }
+
+    .contact-info .social-links {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,496 @@
+/* Reset một số thuộc tính mặc định của trình duyệt */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body chính */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffe4e1; /* Màu nền nhạt tạo cảm giác dễ chịu */
+    padding: 20px;
+}
+
+/* CSS cho tiêu đề chính */
+h1 {
+    text-align: center;
+    color: #2396de;
+    font-size: 36px;
+    padding: 20px;
+    margin-bottom: 30px;
+    margin-top: 100px;
+    border-bottom: 2px solid #007bff;
+}
+
+/* Form tìm kiếm */
+form {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    width: 70%;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #000;
+    margin-right: 10px;
+}
+
+/* Tùy chỉnh trường nhập số */
+input[type="number"] {
+    width: 50px; /* Độ rộng trường nhập liệu */
+    padding: 5px; /* Khoảng đệm bên trong */
+    font-size: 16px; /* Kích thước chữ */
+    border: 2px solid #ccc; /* Đường viền xám nhạt */
+    border-radius: 5px; /* Bo tròn góc */
+    text-align: center; /* Căn giữa nội dung */
+    background-color: #f9f9f9; /* Màu nền nhạt */
+    transition: border-color 0.3s; /* Hiệu ứng chuyển đổi màu viền */
+}
+
+/* Khi người dùng nhấn vào ô nhập liệu */
+input[type="number"]:focus {
+    border-color: #0066ff; /* Đổi màu viền thành hồng khi tập trung */
+    outline: none; /* Bỏ đường viền mặc định */
+    background-color: #fff; /* Đổi màu nền thành trắng */
+}
+
+select {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #000;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #a8d3ff; /* Màu hồng cho nút */
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #5678ff; /* Màu đậm hơn khi hover */
+}
+
+/* Kiểu cho bảng admin */
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.admin-table th, .admin-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.admin-table th {
+    background-color: #a8d3ff; /* Màu hồng */
+    color: rgb(0, 0, 0);
+}
+
+.admin-table tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* Nút chi tiết sản phẩm */
+.details-button {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #a8d3ff; /* Green background color */
+    color: rgb(0, 0, 0); /* White text color */
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.details-button:hover {
+    background-color: rgb(17, 152, 255); /* White background color on hover */
+    color: black; /* Black text color on hover */
+    border: 1px solid #000000; /* Green border on hover */
+}
+
+/* CSS cho biểu tượng giỏ hàng */
+.cart-icon {
+    text-align: right;
+    padding: 10px;
+}
+
+.cart-icon img {
+    width: 40px;
+    height: auto;
+}
+
+.cart-icon span {
+    display: block;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Danh sách sản phẩm */
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.product {
+    flex: 0 1 calc(20% - 10px); /* Điều chỉnh kích thước sản phẩm */
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.product:hover {
+    transform: scale(1.05);
+    background-color: #ffc0cb; /* Màu hồng khi hover */
+}
+
+.product img {
+    max-width: 100%;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.add-to-cart-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00b3ff; /* Màu hồng cho nút thêm vào giỏ hàng */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #146eff; /* Màu hồng đậm hơn khi hover */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    transition: transform 0.3s;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: 10px; /* Các sản phẩm sẽ có khoảng cách đều nhau */
+    gap: 10px; /* Khoảng cách giữa các sản phẩm */
+    padding: 10px;
+    transition: transform 0.3s;
+}
+
+.product {
+    flex: 0 1 calc(20% - 10px);
+    margin: 10px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: background-color 0.3s; /* Add transition for background color */
+}
+
+.product:hover {
+    background-color: #e0e0e0; /* Change background color on hover */
+}
+
+.product img {
+    max-width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+    transition: transform 0.3s;
+}
+
+h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.cart-icon {
+    text-align: right;
+    padding: 10px;
+}
+
+.cart-icon img {
+    width: 30px;
+    height: auto;
+    transition: transform 0.3s;
+}
+.product:hover {
+    background-color: #9ddeff; /* Thay đổi màu nền khi hover sang màu hồng */
+}
+/* CSS cho ô tìm kiếm */
+form {
+    text-align: center;
+    margin-top: 20px;
+}
+
+select {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #a8d3ff;
+    border-radius: 5px;
+    background-color: #fff; /* Màu nền */
+    color: #000; /* Màu chữ */
+}
+
+select:hover {
+    background-color: #fff; /* Màu nền khi hover */
+}
+
+select:focus {
+    outline: none; /* Loại bỏ đường viền khi focus */
+    border-color: #007bff; /* Màu đường viền khi focus */
+}
+
+.menu1 {
+    background: #a8d3ff;
+    width: 100%;
+    float: left;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+}
+
+.menu1 > li {
+    list-style-type: none;
+    display: inline-block; /* Hiển thị các mục cùng một hàng */
+    margin: 0;
+    padding: 10px 20px; /* Tạo khoảng cách xung quanh mục */
+}
+
+.menu1 > li:hover {
+    background: #31a6ff; /* Màu nền khi hover */
+    transition: background 0.3s; /* Hiệu ứng chuyển đổi màu nền */
+}
+
+/* CSS cho menu cấp 2 */
+.menu1 > li > ul.menu2 {
+    display: none; /* Ẩn menu cấp 2 khi chưa hover */
+    position: absolute; /* Đặt vị trí của menu cấp 2 */
+    background: #007bff; /* Màu nền của menu cấp 2 */
+    margin-top: 45px; /* Dịch xuống phía dưới menu cấp 1 */
+    margin-left: -20px; /* Canh lề trái cho đẹp */
+    padding: 0; /* Loại bỏ khoảng cách xung quanh menu cấp 2 */
+}
+
+.menu1 > li:hover > ul.menu2 {
+    display: block; /* Hiển thị menu cấp 2 */
+    border-top: 2px solid #00b3a1; /* Đường viền trên cho menu cấp 2 */
+}
+
+.menu1 > li > ul.menu2 > li {
+    list-style-type: none;
+    padding: 10px 20px;
+    margin: 0;
+    width: 150px;
+}
+
+.menu1 > li > ul.menu2 > li:hover {
+    background: #0056b3; /* Màu nền khi hover */
+    transition: background 0.3s; /* Hiệu ứng chuyển đổi màu nền */
+}
+
+.a-header {
+    text-decoration: none; /* Loại bỏ gạch chân */
+    color: black; /* Màu chữ, có thể thay đổi tùy theo thiết kế */
+    padding: 8px 12px; /* Thêm khoảng cách để liên kết dễ nhấp hơn */
+    transition: color 0.3s; /* Hiệu ứng chuyển màu khi di chuột */
+}
+
+.a-header:hover {
+    color: #000000; /* Thay đổi màu khi di chuột qua liên kết */
+}
+
+.dropdown {
+    display: inline-block;
+    }
+
+.dropdown-btn {
+    text-decoration: none;
+    color: #333;
+    display: inline-block;
+    }
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    }
+
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    }
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+    }
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    }
+
+    .product-link {
+        display: inline-block; /* Để thẻ a có thể được định dạng như một nút */
+        padding: 10px 15px; /* Thêm khoảng cách bên trong */
+        background-color: #00a2ff; /* Màu nền */
+        color: white; /* Màu chữ */
+        border-radius: 5px; /* Bo tròn các góc */
+        text-decoration: none; /* Bỏ gạch chân */
+        transition: background-color 0.3s; /* Hiệu ứng chuyển màu khi hover */
+    }
+    
+    .product-link:hover {
+        background-color: #0077ff; /* Màu nền khi hover */
+    }
+    
+    /* Footer */
+.footer {
+    background-color: #f8f8f8;
+    color: #333;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 20px;
+}
+
+.footer-section h2 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.footer-section p, .footer-section ul, .footer-section a {
+    color: #555;
+    font-size: 14px;
+}
+
+.footer-section a:hover {
+    color: #333;
+    text-decoration: none;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #555;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    color: #333;
+    text-decoration: underline;
+}
+
+.contact {
+    margin: 20px 0;
+}
+
+.socials a {
+    margin: 0 10px;
+    color: #555;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.socials a:hover {
+    color: #333;
+}
+
+.contact-form input[type="email"] {
+    padding: 10px;
+    width: 70%;
+    border: 1px solid #ccc;
+    outline: none;
+    border-radius: 5px 0 0 5px;
+}
+
+.contact-form button {
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #555;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px;
+    background-color: #eee;
+    color: #777;
+    font-size: 14px;
+}
+
+
